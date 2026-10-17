@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator | CodeAlpha Task 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="calculator">
+        <header class="calculator-header">
+            <div>
+                <h1>Calculator</h1>
+                <p>Simple. Smart. Accurate.</p>
+            </div>
+            <div class="calculator-icon">÷</div>
+        </header>
+
+        <!-- Display Screen -->
+        <section class="display" aria-label="Calculator display">
+            <div id="expression" class="expression"
+                 aria-live="polite">0</div>
+            <div id="result" class="result" aria-live="polite">0</div>
+        </section>
+
+        <!-- Calculator Buttons -->
+        <section class="buttons" aria-label="Calculator buttons">
+            <button class="btn utility" data-action="clear">AC</button>
+            <button class="btn utility" data-action="delete">DEL</button>
+            <button class="btn utility" data-action="percent">%</button>
+            <button class="btn operator" data-value="/" aria-label="Divide">÷</button>
+
+            <button class="btn" data-value="7">7</button>
+            <button class="btn" data-value="8">8</button>
+            <button class="btn" data-value="9">9</button>
+            <button class="btn operator" data-value="*" aria-label="Multiply">×</button>
+
+            <button class="btn" data-value="4">4</button>
+            <button class="btn" data-value="5">5</button>
+            <button class="btn" data-value="6">6</button>
+            <button class="btn operator" data-value="-" aria-label="Subtract">−</button>
+
+            <button class="btn" data-value="1">1</button>
+            <button class="btn" data-value="2">2</button>
+            <button class="btn" data-value="3">3</button>
+            <button class="btn operator" data-value="+" aria-label="Add">+</button>
+
+            <button class="btn utility" data-action="sign">+/−</button>
+            <button class="btn" data-value="0">0</button>
+            <button class="btn" data-action="decimal">.</button>
+            <button class="btn equals" data-action="equals">=</button>
+        </section>
+
+        <footer class="calculator-footer">
+            <span class="status-dot"></span>
+            <span>Ready to calculate</span>
+            <span class="keyboard-hint">Keyboard supported</span>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
